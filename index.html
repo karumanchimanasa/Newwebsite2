@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background-image.jpg');
+            background-size: cover;
+            color: #333;
+        }
+
+       /* header {
+            background-color: #4CAF50;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+        }*/
+
+        header {
+    background-color: #333; /* Change background color */
+    color: #fff; /* Change text color */
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+       /* footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        } */
+
+        footer {
+    background-color: #333; /* Change background color */
+    color: #fff; /* Change text color */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 25px;
+            height: 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .search-container {
+            margin-top: 20px;
+        } 
+
+       
+
+    </style>
+</head>
+<body>
+
+    <header>
+        Educational Website
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section class="container">
+        <h1>Welcome to our Educational Platform</h1>
+        <p>This website provides various courses to enhance your knowledge.</p>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="search-container">
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="search">
+            <button onclick="search()">Search</button>
+        </div>
+
+        <!-- Add more content like buttons, images, text fields, etc. -->
+
+    </section>
+
+    <footer>
+        &copy; 2023 Educational Website
+    </footer>
+
+    <script>
+        function search() {
+            // Implement search functionality using JavaScript
+            alert('Search functionality will be implemented here.');
+        }
+    </script>
+
+</body>
+</html>
